@@ -1,0 +1,68 @@
+		#border
+		{
+			background-color: #2d2d2d;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		body{
+			background-color:white;
+			color: black;
+		}
+		#login{
+      		top:-126px;
+      		left:1220px;
+			position: relative;
+			background-color:#2d2d2d;
+			border-color: #2d2d2d;
+		}
+		#login:hover{
+			border-color: white;
+		}
+		#checkout:hover{
+    		border-color: white;
+		}
+		#logout{
+			top:-126px;
+      		left:1170px;
+      		position: relative;
+			background-color:#2d2d2d;
+			border-color: #2d2d2d; 
+			visibility: hidden;
+		}
+		#header1{
+			height: auto;
+			width: 100%;		
+		    cursor: pointer;
+		}
+		#contin{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			top:0px;
+			left:90px;
+		}
+		#Search{
+			width: 400px;
+			top:-65px;
+      		left:550px;
+      		position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+			left:550px;
+			position: relative;
+			width: 46px;
+			height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+		#checkout{
+			top:-126px;
+      		left:1190px;
+      		position: relative;
+			background-color:#2d2d2d;
+			border-color: #2d2d2d; 
+			visibility: hidden;
+		}

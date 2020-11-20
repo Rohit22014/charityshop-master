@@ -1,0 +1,131 @@
+#border
+{
+    background-color: #2d2d2d;
+    height: 15%;
+    width: 100%;
+    color: white;
+}
+body{
+    background-color:white;
+}
+#p1{
+    top:35%;
+    left:23%;
+    width:800px;
+    height:200px;
+    text-align:center;
+    word-wrap: break-word;
+    overflow:auto;
+    position:absolute;
+}
+#p2{
+    top:60%;
+    left:23%;
+    width:800px;
+    height:200px;
+    text-align:center;
+    word-wrap: break-word;
+    overflow:auto;
+    position:absolute;
+}
+#p3{
+    top:90%;
+    left:23%;
+    width:800px;
+    height:200px;
+    text-align:center;
+    word-wrap: break-word;
+    overflow:auto;
+    position:absolute;
+}
+#login{
+    top:-93px;
+    left:1220px;
+    position: relative;
+    background-color:#2d2d2d;
+    border-color: #2d2d2d;
+}
+#login:hover{
+    border-color: white;
+}
+#logout{
+    top:-93px;
+    left:1170px;
+    position: relative;
+    background-color:#2d2d2d;
+    border-color: #2d2d2d;
+    visibility: hidden;
+}
+#header1{
+    top:33px;
+    left:50px;
+    width: 234px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+#Search{
+    width: 400px;
+    top:-35px;
+    left:550px;
+    position: relative;
+    text-align: center;
+}
+#databaseSearch{
+    top:-35px;
+    left:550px;
+    position: relative;
+    width: 46px;
+    height: 42px;
+    background-color: white;
+    border-color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypal-logo {
+    font-family: Verdana, Tahoma;
+    font-weight: bold;
+    font-size: 26px;
+}
+.paypal-logo i:first-child {
+    color: #253b80;
+}
+.paypal-logo i:last-child {
+    color: #179bd7;
+}
+.paypal-button {
+    padding: 15px 30px;
+    border: 1px solid #ff9933;
+    border-radius: 5px;
+    background-image: linear-gradient(#fff0a8, #f9b421);
+    margin: 0 auto;
+    display: block;
+    min-width: 138px;
+    position: relative;
+}
+.paypal-button-title {
+    font-size: 14px;
+    color: #505050;
+    vertical-align: baseline;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+.paypal-button .paypal-logo {
+    display: inline-block;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+#invisible {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+

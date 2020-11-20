@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45166dba-b435-42ab-9444-e61ab4b431eb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1kSRNNVm1OlC5pOR6VIeEJbXrUe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../E-Commerce-website.-master/E-Commerce-website.-master" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rohit\Downloads\charityshop-master (1)\charityshop-master\views" />
+      <recent name="C:\Users\rohit\Downloads\charityshop-master (1)\charityshop-master\public\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45166dba-b435-42ab-9444-e61ab4b431eb" name="Default Changelist" comment="" />
+      <created>1605691964754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605691964754</updated>
+      <workItem from="1605691965998" duration="4321000" />
+      <workItem from="1605723622717" duration="13846000" />
+      <workItem from="1605795365456" duration="2954000" />
+      <workItem from="1605798551354" duration="10000" />
+      <workItem from="1605798699892" duration="15780000" />
+      <workItem from="1605827016133" duration="653000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="394" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605815688713">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="394" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1605815688713" />
+    <state x="420" y="458" key="FileChooserDialogImpl" timestamp="1605818546452">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="420" y="458" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1605818546452" />
+  </component>
+</project>

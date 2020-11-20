@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Find Your Product</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>  
+    <link href="/assets/css/product.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="border">
+      <div id="contin"><img id="header1" src=""></div>
+      <div class="input-group mb-3">
+            <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+            <div class="input-group-append">
+              <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+            </div>
+        </div>
+      <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+      <button id="logout" class="btn btn-primary">Log out</button>
+      <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+    </div>  
+    {{#each results}}
+        <div class="setup" onclick='findSpecific(this)'>
+          <div id="name">{{ProductName}}</div>
+          <img class="images" src="data:image/jpeg;base64,{{ProductImage}}">
+          <p><strong>{{ProductPrice}}</strong></p>
+        </div>
+    {{/each}}
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+    </div>
+    <span id="nothing"><strong>NOTHING MATCHES YOUR SEARCH</strong></span>
+    <span id="advice">But don't give up – check the spelling or try less specific search terms.</span>
+<script src="/assets/js/product.js"></script>
+</body>
+</html>

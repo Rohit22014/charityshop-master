@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reset Your Password</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>  
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <link href="/assets/css/reset.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div id="border">
+		<div id="contin"><img id="header1" src=""></div>
+		<div class="input-group mb-3">
+		    <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+		    <div class="input-group-append">
+		    <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+	    </div>
+	</div>
+      	<button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+	</div>	
+	  <h2 id="header2"><strong>Reset your Password</strong></h2>
+    <label id="label1">To reset your password, enter your email below and submit. An email will be sent to you with a code</label>
+    <label id="label2">Enter your code</label>
+    <label id="label3">Enter your new password</label>
+    <input id="emailInput"  type="text" class="form-control" placeholder="Enter your email">
+    <button id="button3" class="btn btn-primary">Confirm Code</button>
+    <form id="updateForm" action="/Reset" method="PUT"> 
+        <input id="Input2" name="Password" type="text" class="form-control" placeholder="Enter your new Password">
+        <input id="Input3" type="text" class="form-control" placeholder="Enter your code">
+        <button id="button2"  type="submit" class="btn btn-success">Reset Password</button>
+    </form>
+    <p id="warning1">This email is not associated with an account, Please try again.</p>
+    <p id="warning2">This code is incorrect, Please try again.</p>
+    <button id="button1" onclick="getEmails();" type="submit" class="btn btn-primary">Confirm Email</button>
+    
+    <!-- Successful and failed operation popups -->
+    <div class="modal fade" id="successAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-success" role="alert">
+                <strong>Oh Great!</strong>Resetting your password was Successful!
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Resetting your password was Unsuccessful, Please try again!
+            </div>
+        </div>
+    </div>
+
+<script src="/assets/js/reset.js"></script>
+</body>
+</html>

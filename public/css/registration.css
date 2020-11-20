@@ -1,0 +1,92 @@
+		#border
+		{
+			background-color: #2d2d2d;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		body{
+			background-color:white;
+			background-image: url(pic3.jpg);
+		}
+		#login{
+            top:-126px;
+      		left:1220px;
+			position: relative;
+			background-color:#2d2d2d;
+			border-color: #2d2d2d; 
+		}
+		#login:hover{
+			border-color: white;
+		}
+		#Join:hover{
+			background-color: #aaa;
+			border-color: #aaa;
+		}
+		#header1{
+			height: auto;
+			width: 100%;		
+		    cursor: pointer;
+		}
+		#contin{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			top:0px;
+			left:90px;
+		}
+		#Search{
+			width: 400px;
+			top:-65px;
+            left:550px;
+            position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+			left:550px;
+			position: relative;
+			width: 46px;
+			height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+		#border2{
+		  top:113px;
+		  left: 380px;
+	      height:270%;
+	      width: 50%;
+	      position: absolute;
+	      background-color: #42444e;
+	      color: white;
+    	}
+    	.form-group{
+    		top: 130px;
+    		width:400px;
+    		left: 80px;
+    		position: relative;
+    	}
+    	.labels{
+    		top: 130px;
+    		left: 80px;
+    		position: relative;
+    	}
+    	#exampleModalLabel{
+    		position: relative;
+    		left:80px;
+    		top:70px;
+    	}
+    	#terms{
+    		position: relative;
+    		left:70px;
+    	}
+    	#Join{
+    		color: white;
+      		background-color: #2d2d2d;
+      		border-color: black;
+      		position: relative;
+      		width: 200px;
+      		height: 60px;
+      		left:500px;
+      		top:30px;
+    	}

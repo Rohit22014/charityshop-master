@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login to your account</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <link href="/assets/css/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+		<div id="border">
+			<div id="contin"><img id="header1" src=""></div>
+			<div class="input-group mb-3">
+		    <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+		    <div class="input-group-append">
+		      <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+		    </div>
+	    </div>
+      <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+		</div>
+    <aside id=border2>	
+          <h2  id="label1"><strong>Log in to your account</strong></h2>
+          <label id="label2"><strong>Username</strong></label>
+          <input type="text" id="Username" name="Username" class="form-control" placeholder="Username" required>
+          <label id="label3"><strong>Password</strong></label>
+          <input type="password" id="Password" name="Password" class="form-control" placeholder="Password" required>
+          <div id="resetLink">Forgot Password?</div>
+          <div id="label4">Dont have an account?<div id="Registration">Sign Up</div></div>
+          <button id="signin" onclick="passwordVerification();" class="btn btn-success">Login</button>
+          <button id="continue" class="btn btn-success">Next</button>
+          <p id="warning1">This is not a registered Username, Try again</p>
+          <p id="warning2">The password is incorrect, Try again</p>
+    </aside>
+
+    <!-- Successful and failed operation popups -->
+    <div class="modal fade" id="successAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-success" role="alert">
+                <strong>Oh Great!</strong> Login was Successful!
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Login was Unsuccessful, Please try again!
+            </div>
+        </div>
+    </div>
+
+<script src="/assets/js/login.js"></script>
+</body>
+</html>

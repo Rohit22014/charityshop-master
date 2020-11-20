@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Homepage-Jumble</title>
+</head>
+<body>
+    <h2>Thank you for your Order!</h2>
+    <h3>Order Details:</h3>
+    <br/>
+    <table style="width:100%">
+        <tr>
+            <th>Item Details</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </tr>
+        {{# each products}}
+            <tr>
+                <td>{{this.item}}</td>
+                <td>{{this.qty}}</td>
+                <td>€{{this.price}}</td>
+            </tr>
+        {{/each}}
+        <tr>
+            <td colspan="2">Delivery</td>
+            <td>€{{DeliveryPrice}}</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Price (incl Delivery)</td>
+            <td>€{{finalPrice}}</td>
+        </tr>
+    </table>
+</body>
+</html>

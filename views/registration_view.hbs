@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <link href="/assets/css/registration.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+		<div id="border">
+			<div id="contin"><img id="header1" src=""></div>
+			<div class="input-group mb-3">
+		        <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+		        <div class="input-group-append">
+		        	<button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+		        </div>
+	    	</div>
+      		<button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+		</div>	
+    <div id="border2">
+  		<form id="addForm" action="/Registration" method="POST">    
+        <h2  id="exampleModalLabel"><strong>Registration</strong></h2>
+        <label class="labels">Username</label>
+        <div class="form-group">
+          <input type="text" name="Username" class="form-control" placeholder="Username" required>
+        </div>
+        <br><br>
+        <label class="labels">Password</label>
+        <div class="form-group">
+          <input type="text" name="Password" class="form-control" placeholder="Password" required>
+        </div>
+        <br><br>
+        <label class="labels">First Name</label>
+        <div class="form-group">
+          <input type="text" name="FirstNames" class="form-control" placeholder="First Name(s)" required>
+        </div>
+        <br><br>
+        <label class="labels">Surname</label>
+  			<div class="form-group">
+          <input type="text" name="Surname" class="form-control" placeholder="Surname" required>
+        </div>
+        <br><br>
+        <label class="labels">Mobile Number</label>
+  			<div class="form-group">
+          <input type="text" name="Mobile" class="form-control" placeholder="Mobile Phone" required>
+        </div>
+        <br><br>
+        <label class="labels">Email Adress</label>
+  			<div class="form-group">
+          <input type="text" name="Email" class="form-control" placeholder="Email" required>
+        </div>
+        <br><br>
+        <label class="labels">Date of Birth</label>
+        <div class="form-group">
+          <input type="text" name="DOB" class="form-control" placeholder="Date Of Birth e.g.(22/02/2002)" required>
+        </div>
+        <br><br>
+        <label class="labels">Address Line 1</label>
+  			<div class="form-group">
+          <input type="text" name="AddressLine1" class="form-control" placeholder="Address Line 1" required>
+        </div>
+        <br><br>
+        <label class="labels">Address Line 2</label>
+  			<div class="form-group">
+          <input type="text" name="AddressLine2" class="form-control" placeholder="Address Line 2" >
+        </div>
+        <br><br>
+        <label class="labels">Town</label>
+  			<div class="form-group">
+          <input type="text" name="Town" class="form-control" placeholder="Town" required>
+        </div>
+        <br><br>
+        <label class="labels">County</label>
+  			<div class="form-group">
+          <input type="text" name="countyORcity" class="form-control" placeholder="city/county" required>
+        </div>
+        <br><br>
+        <label class="labels">Eircode</label>
+  			<div class="form-group">
+          <input type="text" name="EIRCODE" class="form-control" placeholder="EIRCODE" >
+        </div>
+        <br><br><br><br><br><br><br>
+        <label id="terms">By creating your account, you agree to our Terms and Conditions & Privacy Policy</label>
+        <button id="Join" type="submit" class="btn btn-primary">Join Web To Wardrobe</button>
+      </form>
+    </div>
+
+
+    <!-- Successful and failed operation popups -->
+    <div class="modal fade" id="successAlert" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-success" role="alert">
+                <strong>Oh Great!</strong> Registration was Successful!
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Registration was Unsuccessful, Please try again!
+            </div>
+        </div>
+    </div>
+
+
+<script src="/assets/js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Product Details</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <link href="/assets/css/fullProduct.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="border">
+      <div id="contin"><img id="header1" src=""></div>
+      <div class="input-group mb-3">
+            <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+            <div class="input-group-append">
+              <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+            </div>
+        </div>
+          <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></i></button>
+          <button id="logout" class="btn btn-primary">Log out</button>
+          <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+    </div>  
+    {{#each results}}
+        <div class="setupView">
+          <img id="image1" src="data:image/jpeg;base64,{{ProductImage}}" width="500px" height="500px">
+        </div>
+        <div class="setupView">
+          <h3><strong id="pname">{{ProductName}}</strong></h3>
+        </div>
+        <div class="setupView">
+           <p id="pCategory"><strong>Category:</strong> {{ProductCategory}}</p>
+         </div>
+        <div class="setupView">
+          <p id="pSize"><strong>Sizes:</strong> {{ProductSize}}</p>
+        </div>
+        <div class="setupView">
+          <p id="pDescription"><strong>Description:</strong> {{ProductDescription}}</p>
+        </div>
+        <div class="setupView">
+          <p id="pPrice"><strong>Price: {{ProductPrice}}</strong></p>
+        </div>
+        <a id="theH" href="{{_id}}">Add to Basket</a>
+    {{/each}}   
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+      </div>
+<script src="/assets/js/fullProduct.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+		#border
+		{
+			background-color: #2d2d2d;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		body{
+			background-color:white;
+		}
+		#login{
+      top:-126px;
+      left:1220px;
+			position: relative;
+			background-color:#2d2d2d;
+      border-color: #2d2d2d; 
+		}
+		#login:hover{
+			border-color: white;
+		}
+		#header1{
+			height: auto;
+      width: 100%;    
+      cursor: pointer;
+		}
+    #contin{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      top:0px;
+      left:90px;
+    }
+		#Search{
+			width: 400px;
+      top:-65px;
+      left:550px;
+      position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+      left:550px;
+      position: relative;
+      width: 46px;
+      height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+    #button1{
+      top:139px;
+      left: 1000px;
+      position: relative;
+      color: rgb(137, 152, 155);
+      background-color: rgb(231, 238, 236);
+      border-color: rgb(231, 238, 236);
+    }
+    #label1{
+      top:210px;
+      left:360px;
+      position: relative;
+    }
+    #emailInput{
+      width: 50%;
+      height: 30px;
+      left: 360px;
+      top: 250px;
+      text-align: center;
+      position: relative;
+    }
+    #Input2{
+      width: 50%;
+      height: 30px;
+      left: 360px;
+      top: 220px;
+      text-align: center;
+      position: relative;
+      visibility: hidden;
+    }
+    #header2{
+      position: relative;
+      top: 95px;
+      left:360px;
+    }
+    #button2{
+      top:514px;
+      left: 995px;
+      position: absolute;
+      visibility: hidden;
+      color: rgb(137, 152, 155);
+      background-color: rgb(231, 238, 236);
+      border-color: rgb(231, 238, 236);
+    }
+    #button3{
+      top:514px;
+      left: 1000px;
+      position: absolute;
+      visibility: hidden;
+      color: rgb(137, 152, 155);
+      background-color: rgb(231, 238, 236);
+      border-color: rgb(231, 238, 236);
+    }
+    #warning1{
+      color: red;
+      position: relative;
+      top:215px;
+      left: 515px;
+      visibility: hidden;
+    }
+    #warning2{
+      color: red;
+      position: relative;
+      top:175px;
+      left: 515px;
+      visibility: hidden;
+    }
+    #label2{
+      top:210px;
+      left:-350px;
+      position: relative;
+      visibility: hidden;
+    }
+    #label3{
+      top:210px;
+      left:-470px;
+      position: relative;
+      visibility: hidden;
+    }
+    #Input3{
+      width: 50%;
+      height: 30px;
+      left: 360px;
+      top: 190px;
+      text-align: center;
+      position: relative;
+      visibility: hidden;
+    }

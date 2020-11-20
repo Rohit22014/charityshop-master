@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Homepage-Jumble</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/home.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+		<div id="border">
+			<div id="contin"><img id="header1" src=""></div>
+			<div class="input-group mb-3">
+		        <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+		        <div class="input-group-append">
+		        	<button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+		        </div>
+	    	</div>
+      		<button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+      		<button id="logout" class="btn btn-primary">Log out</button>
+          <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+		</div>	
+
+		<div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+    	</div>
+        <svg viewBox="-40 0 150 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g fill="grey"
+             transform="rotate(-10 50 100)
+                        translate(-36 45.5)
+                        skewX(40)
+                        scale(1 0.5)">
+            <path id="heart" d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
+          </g>
+         
+          <use xlink:href="#heart" fill="none" stroke="red"/>
+        </svg>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>

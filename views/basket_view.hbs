@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Basket</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <link href="/assets/css/basket.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="border">
+    <div id="contin"><img id="header1" src=""></div>
+    <div class="input-group mb-3">
+        <input class="py-2 border-left-0 border" id="Search" type="search" placeholder="Find The Products Your Looking for...">
+        <div class="input-group-append">
+            <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+    <button id="logout" class="btn btn-primary">Log out</button>
+    <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+    {{# if products}}
+    <div class='cart'>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="list-group">
+                    <div class="list-group-item border">
+                            <h3>My Basket</h3>
+                            <hr>
+                            {{# each products }}
+                            <img class="images" src="data:image/jpeg;base64,{{this.image}}">
+                            {{ this.item }}
+                            <span class="badge price-cart"><strong>€{{ this.price }}</strong></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-raised btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/basket/add/{{this.id}}">Increase by 1</a>
+                                    <a class="dropdown-item" href="/basket/subtract/{{this.id}}">Decrease by 1</a>
+                                </div>
+                            </div>
+                            <span class="total">Quantity:{{ this.qty }}</span>
+                            {{/each}}
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <strong>Total: € {{ totalPrice }}</strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <a id="checkout_btn" class="btn btn-raised  btn-success">Checkout</a>
+            </div>
+        </div>
+    {{else}}
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 main">
+                <h2>No items in Cart</h2>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+</div>
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/js/basket.js"></script>
+</body>
+</html>
